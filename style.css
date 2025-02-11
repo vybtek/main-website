@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: none; /* Initially hidden */
+}
+
+#scrollUpBtn:hover {
+  background-color: darkblue;
+}
+
+.navlink {
+  color: white;
+  font-size: 15px;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.active {
+  color: rgba(0, 0, 0, 0.139);
+}
+
+@keyframes move-dot {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.animate-move-dot {
+  animation: move-dot 2s linear infinite;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress);
+  }
+}
+.progress-bar {
+  animation: fillProgress 2s ease-out forwards;
+}

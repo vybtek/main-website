@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg-gray-">
+      <!-- Header area section start -->
+      <special-header></special-header>
+
+
+      <!-- Banner Area Section -->
+      <section
+        class="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center px-6 md:px-12 lg:px-20"
+        style="
+          background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-beautiful-technology-website-business-poster-background-template-picture-image_1107136.jpg');
+        "
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div
+          class="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl space-y-6 lg:space-y-0"
+        >
+          <!-- Left Content -->
+          <div class="text-white text-center lg:text-left max-w-lg">
+            <h1
+              class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
+            >
+              IT Consulting Services <br />
+              For Your Business
+            </h1>
+            <p class="mt-4 text-lg">
+              We are a leading technology solutions provider worldwide for over
+              40 years.
+            </p>
+          </div>
+
+          <!-- Right Form -->
+          <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">
+              Schedule Your Appointment
+            </h2>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">
+              We are here to help you 24/7 with experts
+            </p>
+            <form class="mt-6 space-y-4">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="email"
+                placeholder="E-Mail"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="url"
+                placeholder="Your Website"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                class="w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              >
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- about area section -->
+      <section
+        class="container mx-auto px-6 py-16 flex flex-col-reverse lg:flex-row items-center bg-gray-00"
+      >
+        <!-- Left Side - Images -->
+        <div
+          class="relative w-full lg:w-1/2 flex justify-center sm:mt-16 mt-16"
+        >
+          <!-- Top Left Image -->
+          <div
+            class="absolute top-0 left-0 ml-2 transform -translate-x-6 -translate-y-6 w-40 h-40 lg:w-48 lg:h-48 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-xl hover:rotate-3"
+          >
+            <img
+              src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041859.jpg?semt=ais_hybrid"
+              class="w-full h-full object-cover"
+              alt="Teamwork"
+            />
+          </div>
+
+          <!-- Center Image -->
+          <div
+            class="relative w-64 h-64 lg:w-80 lg:h-80 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgwNEM9B5AQc-Gfau7ww6vcHx3lXe-Pza8A&s"
+              class="w-full h-full object-cover"
+              alt="Collaboration"
+            />
+          </div>
+
+          <!-- Bottom Right Image -->
+          <div
+            class="absolute bottom-0 right-0 transform translate-x-6 translate-y-6 w-40 h-40 lg:w-48 lg:h-48 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-xl hover:-rotate-3"
+          >
+            <img
+              src="https://img.freepik.com/premium-photo/tech-devices-icons-connected-digital-planet-earth_117023-449.jpg"
+              class="w-full h-full object-cover"
+              alt="Development"
+            />
+          </div>
+        </div>
+
+        <!-- Right Side - Text and Progress Bars -->
+        <div class="w-full lg:w-1/2 lg:pl-12">
+          <h3 class="text-gray-800 font-semibold uppercase text-sm mb-2">
+            About Us
+          </h3>
+          <div class="mt-1 flex items-center relative">
+            <div class="h-1 w-12 bg-blue-600 rounded-full relative overflow-hidden">
+              <span class="absolute  h-3 w-3 bg-white rounded-full animate-move-dot"></span>
+            </div>
+          </div>
+          <h2 class="text-3xl font-bold text-gray-900 leading-tight">
+            We Are Increasing Business Success With Technology
+          </h2>
+          <p class="text-gray-600 mt-4">
+            Over 25 years working in IT services developing software
+            applications and mobile apps for clients all over the world.
+          </p>
+
+          <!-- Skills Progress Bars -->
+          <div class="mt-6 space-y-4">
+            <div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                    <span>Software Development</span>
+                    <span>92%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                    <div class="bg-blue-600 h-2 rounded-full progress-bar" style="--progress: 92%;"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                    <span>Cyber Security</span>
+                    <span>80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                    <div class="bg-blue-600 h-2 rounded-full progress-bar" style="--progress: 80%;"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                    <span>Artificial Intelligence</span>
+                    <span>95%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                    <div class="bg-blue-600 h-2 rounded-full progress-bar" style="--progress: 95%;"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                    <span>Web Development</span>
+                    <span>78%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                    <div class="bg-blue-600 h-2 rounded-full progress-bar" style="--progress: 78%;"></div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Button -->
+          <div class="mt-8">
+            <a
+              href="#"
+              class="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services section -->
+
+      <section class="py-16 px-4 text-center bg-gray-100">
+        <h3 class="text-black font-semibold text-sm uppercase">Services</h3>
+        <h2 class="text-3xl font-bold mt-2">
+          We Are Offering All Kinds of <br />
+          IT Solutions Services
+        </h2>
+        <div class="mt-4 flex justify-center">
+          <div class="h-1 w-12 bg-blue-600 rounded-full"></div>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Service Card 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/1.png"
+              alt="Software Development"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">Software Development</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/3.png"
+              alt="Web Development"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">Digital Marketing</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/4.png"
+              alt="Analytic Solutions"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">Web Design</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/5.png"
+              alt="Analytic Solutions"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">IT Tech Support</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/6.png"
+              alt="Analytic Solutions"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">Tech Consultation</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://rstheme.com/products/html/braintech/assets/images/services/main-home/icons/2.png"
+              alt="Analytic Solutions"
+              class="w-16 mx-auto"
+            />
+            <h3 class="text-xl font-semibold mt-4">Tech Outsourcing</h3>
+            <p class="text-gray-600 mt-2">
+              At vero eos et accusamus et iusto odio praesentium accusamus et
+              iusto odio data center for managing database.
+            </p>
+          </div>
+        </div>
+      </section>
+          
+
+
+      <!-- working progress section -->
+      <section class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 items-center mb-6">
+        <div
+          class="bg-blue-900 md:h-full md:w-[80%] text-white m-4 p-8 rounded-lg md:col-span-1 flex flex-col justify-center"
+        >
+          <h4 class="uppercase text-sm tracking-wide">Working Process</h4>
+          <h2 class="text-2xl font-bold mt-2">
+            Our Working Process - How We Work For Our Customers
+          </h2>
+          <button
+            class="mt-6 px-6 py-2 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-700 transition"
+          >
+           <a href="contact.html">Contact Us</a>
+          </button>
+        </div>
+        <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 m-4">
+          <div>
+            <h3 class="text-3xl font-bold text-blue-900">
+              1.  <br/> <span class="text-black text-xl">Discovery</span>
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac
+              nibh luctus, in porttitor the lacus egestas.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-blue-900">
+              2. <br/> <span class="text-black text-xl">Planning</span>
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac
+              nibh luctus, in porttitor the lacus egestas.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-blue-900">
+              3.  <br/> <span class="text-black text-xl">Execute</span>
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac
+              nibh luctus, in porttitor the lacus egestas.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-blue-900">
+              4.  <br/> <span class="text-black text-xl">Deliver</span>
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac
+              nibh luctus, in porttitor the lacus egestas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section start -->
+      <special-footer></special-footer>
+
+      <!-- scroll up button -->
+      <button id="scrollUpBtn" onclick="scrollToTop()">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </button>
+    </div>
+
+    <script src="headerFooter.js"></script>
+  </body>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+  </script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+  
+    <special-header></special-header>
+    <div class="bg-gray-200">
+      
+
+      <main class="container mx-auto py-10 px-6">
+        <h1 class="text-3xl font-bold text-center mb-8">Sitemap</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-3">Main Pages</h2>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-blue-600 hover:underline">Home</a></li>
+                    <li><a href="about.html" class="text-blue-600 hover:underline">About</a></li>
+                    <li><a href="blog.html" class="text-blue-600 hover:underline">Blogs</a></li>
+                    <li><a href="contact.html" class="text-blue-600 hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-3">Services</h2>
+                <ul class="space-y-2">
+                    <li><a href="service1.html" class="text-blue-600 hover:underline">Software Development</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Web Development</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Analytic Solutions</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Cloud And DevOps</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Product Design</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Data Center</a></li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-3">Other Pages</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-600 hover:underline">Pages</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <special-footer></special-footer>
+
+  <!-- scroll up button -->
+  <button id="scrollUpBtn" onclick="scrollToTop()"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+  
+  </div>
+
+  <script src="headerFooter.js"></script>
+  </body>
+</html>
