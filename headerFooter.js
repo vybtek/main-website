@@ -6,7 +6,7 @@ class SpecialHeader extends HTMLElement {
           <!-- Logo -->
           <a href="index.html">
           <div class="flex items-center space-x-2">
-            <img src="./images/logo.png" alt="Logo" class="w-10 h-10" />
+            <img src="./images/logo.png" alt="Logo" class="w-12 h-12" />
             <span class="text-xl font-bold">VybTek</span>
           </div>
           </a>
