@@ -135,19 +135,19 @@ class SpecialFooter extends HTMLElement {
                 <a href="service1.html" class="hover:text-blue-500">Software Development</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-500">Web Design</a>
+                <a href="service2.html" class="hover:text-blue-500">Web Design</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-500">Digital Marketing</a>
+                <a href="service3.html" class="hover:text-blue-500">Digital Marketing</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-500">IT Tech Support</a>
+                <a href="service4.html" class="hover:text-blue-500">IT Tech Support</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-500">Tech Outsourcing</a>
+                <a href="service5.html" class="hover:text-blue-500">Tech Outsourcing</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-500">Tech Consultation</a>
+                <a href="service6.html" class="hover:text-blue-500">Tech Consultation</a>
               </li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ class SpecialFooter extends HTMLElement {
             <a href="about.html" class="hover:text-blue-500">About</a>
             <a href="services.html" class="hover:text-blue-500">Services</a>
             <a href="blog.html" class="hover:text-blue-500">Blog</a>
-            <a href="#" class="hover:text-blue-500">Career</a>
+            <a href="careers.html" class="hover:text-blue-500">Career</a>
             <a href="faq.html" class="hover:text-blue-500">FAQs</a>
             <a href="contact.html" class="hover:text-blue-500">Contact Us</a>
             <a href="sidemap.html" class="hover:text-blue-500">Sidemap</a>
