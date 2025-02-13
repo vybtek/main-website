@@ -34,9 +34,6 @@
   position: relative;
 }
 
-.active {
-  color: rgba(0, 0, 0, 0.139);
-}
 
 @keyframes move-dot {
   0% {
@@ -68,6 +65,32 @@
 }
 
 
-.rotate {
-  transform: rotate(180deg);
+
+.active-link {
+  font-weight: bold;
+  color: rgb(35, 220, 237) !important;
+  text-decoration: none;
 }
+
+.inactive-link {
+  font-weight: normal;
+  color: white ;
+  text-decoration: none;
+}
+
+
+
+.active-footer-link {
+  font-weight: bold;
+  color: blue !important;
+  text-decoration: none;
+}
+
+.inactive-footer-link {
+  font-weight: normal;
+  color: gray !important;
+  text-decoration: none;
+}
+
+
+
