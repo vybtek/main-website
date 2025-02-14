@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /public/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://yourwebsite.com/sitemap.xml
