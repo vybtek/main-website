@@ -5,8 +5,8 @@ class SpecialHeader extends HTMLElement {
         <div class=" shadow-md">
           <div class="container mx-auto flex items-center justify-between py-3 px-6">
             <!-- Logo -->
-            <a href="index.html" class="flex items-center space-x-2">
-              <img src="./images/logo.png" alt="Logo" class="w-10 h-10" />
+            <a href="index.html" class="flex items-center ">
+              <img src="./images/logo.png" alt="Logo" class="w-14 h-14" />
               <span class="text-xl font-bold">VybTek</span>
             </a>
 
@@ -54,12 +54,12 @@ class SpecialHeader extends HTMLElement {
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">Services ▾</button>
                 <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                  <a href="service1.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Software Development</a>
-                  <a href="service2.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
-                  <a href="service3.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Digital Marketing</a>
-                  <a href="service4.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">IT Tech Support</a>
-                  <a href="service5.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Outsourcing</a>
-                  <a href="service6.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Consultation</a>
+                  <a href="software.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Software Development</a>
+                  <a href="design.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
+                  <a href="marketing.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Digital Marketing</a>
+                  <a href="techsupport.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">IT Tech Support</a>
+                  <a href="outsourcing.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Outsourcing</a>
+                  <a href="consultation.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Consultation</a>
                 </div>
               </li>
 
@@ -83,9 +83,9 @@ class SpecialHeader extends HTMLElement {
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="https://x.com/vybtekIT" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-                <i class="fab fa-twitter"></i>
+               <i class="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="https://www.linkedin.com/in/vybtek-it-solutions-014a50350/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
+              <a href="https://www.linkedin.com/company/vybtek/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
                 <i class="fab fa-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/vybtek_it/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
@@ -103,12 +103,12 @@ class SpecialHeader extends HTMLElement {
       Services <i class="fas fa-chevron-down"></i>
     </button>
     <div class="hidden group-hover:block bg-gray-100 p-2 space-y-2">
-      <a href="service1.html" class="nav-link block hover:bg-gray-200 text-black">Software Development</a>
-      <a href="service2.html" class="nav-link block hover:bg-gray-200 text-black">Web Design</a>
-      <a href="service3.html" class="nav-link block hover:bg-gray-200 text-black">Digital Marketing</a>
-      <a href="service4.html" class="nav-link block hover:bg-gray-200 text-black">IT Tech Support</a>
-      <a href="service5.html" class="nav-link block hover:bg-gray-200 text-black">Tech Outsourcing</a>
-      <a href="service6.html" class="nav-link block hover:bg-gray-200 text-black">Tech Consultation</a>
+      <a href="software.html" class="nav-link block hover:bg-gray-200 text-black">Software Development</a>
+      <a href="design.html" class="nav-link block hover:bg-gray-200 text-black">Web Design</a>
+      <a href="marketing.html" class="nav-link block hover:bg-gray-200 text-black">Digital Marketing</a>
+      <a href="techsupport.html" class="nav-link block hover:bg-gray-200 text-black">IT Tech Support</a>
+      <a href="outsourcing.html" class="nav-link block hover:bg-gray-200 text-black">Tech Outsourcing</a>
+      <a href="consultation.html" class="nav-link block hover:bg-gray-200 text-black">Tech Consultation</a>
     </div>
   </div>
 
@@ -135,16 +135,21 @@ class SpecialHeader extends HTMLElement {
   }
 
   activateCurrentNavLink() {
-    const navLinks = document.querySelectorAll("#mobile-menu .nav-link, .nav-link");
-    const currentPath = window.location.pathname.split("/").pop() || "index.html"; // Default to index.html if empty
-  
+    const navLinks = document.querySelectorAll(
+      "#mobile-menu .nav-link, .nav-link"
+    );
+    const currentPath =
+      window.location.pathname.split("/").pop() || "index.html"; // Default to index.html if empty
+
     navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href") ? link.getAttribute("href").split("/").pop() : null;
-  
+      const linkPath = link.getAttribute("href")
+        ? link.getAttribute("href").split("/").pop()
+        : null;
+
       if (linkPath === currentPath) {
         link.classList.add("active-link");
         link.classList.remove("inactive-link");
-  
+
         // If the link is inside a dropdown, mark its parent button as active
         const parentDiv = link.closest(".group");
         if (parentDiv) {
@@ -156,8 +161,6 @@ class SpecialHeader extends HTMLElement {
       }
     });
   }
-  
-  
 
   setupMobileMenu() {
     this.querySelector("#menu-toggle")?.addEventListener("click", () => {
@@ -165,8 +168,6 @@ class SpecialHeader extends HTMLElement {
     });
   }
 }
-
-
 
 class SpecialFooter extends HTMLElement {
   connectedCallback() {
@@ -176,7 +177,7 @@ class SpecialFooter extends HTMLElement {
           <!-- Branding Section -->
           <div>
             <h2 class="text-xl font-bold flex items-center gap-2">
-              <img src="./images/logo.png" alt="vybtek Logo" class="w-8 h-8" /> 
+              <img src="./images/logo.png" alt="vybtek Logo" class="w-12 h-12" /> 
               VybTek
             </h2>
             <p class="text-gray-600 mt-2">
@@ -185,8 +186,8 @@ class SpecialFooter extends HTMLElement {
             </p>
             <div class="flex space-x-3 mt-4">
               <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://x.com/vybtekIT" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/vybtek-it-solutions-014a50350/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+              <a href="https://x.com/vybtekIT" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/vybtek/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/vybtek_it/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -195,12 +196,12 @@ class SpecialFooter extends HTMLElement {
           <div>
             <h3 class="text-lg font-semibold">IT Services</h3>
             <ul class="mt-2 space-y-2 text-gray-600">
-              <li><a href="service1.html" class="footer-link">Software Development</a></li>
-              <li><a href="service2.html" class="footer-link">Web Design</a></li>
-              <li><a href="service3.html" class="footer-link">Digital Marketing</a></li>
-              <li><a href="service4.html" class="footer-link">IT Tech Support</a></li>
-              <li><a href="service5.html" class="footer-link">Tech Outsourcing</a></li>
-              <li><a href="service6.html" class="footer-link">Tech Consultation</a></li>
+              <li><a href="software.html" class="footer-link">Software Development</a></li>
+              <li><a href="design.html" class="footer-link">Web Design</a></li>
+              <li><a href="marketing.html" class="footer-link">Digital Marketing</a></li>
+              <li><a href="techsupport.html" class="footer-link">IT Tech Support</a></li>
+              <li><a href="outsourcing.html" class="footer-link">Tech Outsourcing</a></li>
+              <li><a href="consultation.html" class="footer-link">Tech Consultation</a></li>
             </ul>
           </div>
 
@@ -227,7 +228,7 @@ class SpecialFooter extends HTMLElement {
             <a href="careers.html" class="footer-link">Career</a>
             <a href="faq.html" class="footer-link">FAQs</a>
             <a href="contact.html" class="footer-link">Contact Us</a>
-            <a href="sidemap.html" class="footer-link">Sidemap</a>
+            <a href="sitemap.html" class="footer-link">Sitemap</a>
             <a href="ourteam.html" class="footer-link">Our Team</a>
           </div>
         </div>
@@ -238,10 +239,13 @@ class SpecialFooter extends HTMLElement {
 
   activateCurrentFooterLink() {
     const footerLinks = this.querySelectorAll(".footer-link");
-    const currentPath = window.location.pathname.split("/").pop() || "index.html"; // Default to index.html if empty
+    const currentPath =
+      window.location.pathname.split("/").pop() || "index.html"; // Default to index.html if empty
 
     footerLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href") ? link.getAttribute("href").split("/").pop() : null;
+      const linkPath = link.getAttribute("href")
+        ? link.getAttribute("href").split("/").pop()
+        : null;
 
       if (linkPath === currentPath) {
         link.classList.add("active-footer-link");
@@ -253,8 +257,6 @@ class SpecialFooter extends HTMLElement {
     });
   }
 }
-
-
 
 customElements.define("special-header", SpecialHeader);
 customElements.define("special-footer", SpecialFooter);

@@ -6,17 +6,94 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://vybtek.netlify.app/</loc>
+  <loc>https://vybtek.com/</loc>
   <lastmod>2025-02-14T05:57:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+
 <url>
-  <loc>https://vybtek.netlify.app/contact</loc>
+  <loc>https://vybtek.com/contact</loc>
   <lastmod>2025-02-14T05:57:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
+<url>
+  <loc>https://vybtek.com/about</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/services</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/blog</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/ourteam</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/faq</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/careers</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/sitemap</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/software</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/design</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/marketing</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/techsupport</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/outsourcing</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://vybtek.com/consultation</loc>
+  <lastmod>2025-02-14T05:57:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
