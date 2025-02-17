@@ -63,17 +63,17 @@ class SpecialHeader extends HTMLElement {
                 </div>
               </li>
 
+              <li><a href="blog.html" class="nav-link hover:opacity-80">Blog</a></li>
+              <li><a href="contact.html" class="nav-link hover:opacity-80">Contact</a></li>
               <!-- Pages Dropdown -->
               <li class="nav-link relative group">
-                <button class="nav-link hover:opacity-80">Pages ▾</button>
+                <button class="nav-link hover:opacity-80">More ▾</button>
                 <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
                 <a href="ourteam.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a>
                   <a href="faq.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQs</a>
                   <a href="careers.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
                 </div>
               </li>
-              <li><a href="blog.html" class="nav-link hover:opacity-80">Blog</a></li>
-              <li><a href="contact.html" class="nav-link hover:opacity-80">Contact</a></li>
              
             </ul>
 
@@ -112,9 +112,12 @@ class SpecialHeader extends HTMLElement {
     </div>
   </div>
 
+  
+  <a href="blog.html" class="nav-link block hover:bg-gray-200 text-black py-2">Blog</a>
+  <a href="contact.html" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
   <div class="relative group">
     <button class="w-full hover:bg-gray-200 text-left flex justify-between items-center text-black py-2">
-      Pages <i class="fas fa-chevron-down"></i>
+      More <i class="fas fa-chevron-down"></i>
     </button>
     <div class="hidden group-hover:block bg-gray-100 p-2 space-y-2">
       <a href="ourteam.html" class="nav-link block hover:bg-gray-200 text-black">Our Team</a>
@@ -122,9 +125,6 @@ class SpecialHeader extends HTMLElement {
       <a href="careers.html" class="nav-link block hover:bg-gray-200 text-black">Careers</a>
     </div>
   </div>
-
-  <a href="blog.html" class="nav-link block hover:bg-gray-200 text-black py-2">Blog</a>
-  <a href="contact.html" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
 </div>
  
         </nav>
