@@ -47,31 +47,31 @@ class SpecialHeader extends HTMLElement {
           <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <!-- Menu -->
             <ul id="nav-menu" class="hidden md:flex space-x-8">
-              <li><a href="index.html" class="nav-link hover:opacity-80">Home</a></li>
-              <li><a href="about.html" class="nav-link hover:opacity-80">About</a></li>
+              <li><a href="index" class="nav-link hover:opacity-80">Home</a></li>
+              <li><a href="about" class="nav-link hover:opacity-80">About</a></li>
              
               <!-- Services Dropdown -->
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">Services ▾</button>
                 <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                  <a href="software.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Software Development</a>
-                  <a href="design.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
-                  <a href="marketing.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Digital Marketing</a>
-                  <a href="techsupport.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">IT Tech Support</a>
-                  <a href="outsourcing.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Outsourcing</a>
-                  <a href="consultation.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Consultation</a>
+                  <a href="software" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Software Development</a>
+                  <a href="design" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
+                  <a href="marketing" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Digital Marketing</a>
+                  <a href="techsupport" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">IT Tech Support</a>
+                  <a href="outsourcing" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Outsourcing</a>
+                  <a href="consultation" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Consultation</a>
                 </div>
               </li>
 
-              <li><a href="blog.html" class="nav-link hover:opacity-80">Blog</a></li>
-              <li><a href="contact.html" class="nav-link hover:opacity-80">Contact</a></li>
+              <li><a href="blog" class="nav-link hover:opacity-80">Blog</a></li>
+              <li><a href="contact" class="nav-link hover:opacity-80">Contact</a></li>
               <!-- Pages Dropdown -->
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">More ▾</button>
                 <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                <a href="ourteam.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a>
-                  <a href="faq.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQs</a>
-                  <a href="careers.html" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
+                <a href="ourteam" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a>
+                  <a href="faq" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQs</a>
+                  <a href="careers" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
                 </div>
               </li>
              
