@@ -17,28 +17,34 @@ class SpecialHeader extends HTMLElement {
 
             <!-- Contact Info -->
             <div class="hidden md:flex items-center space-x-8">
-              <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-location-dot text-blue-600 w-5 h-5"></i>
-                <div>
-                  <p class="text-sm font-semibold">Address</p>
-                  <p class="text-xs text-gray-500">Udaipur</p>
-                </div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-envelope text-blue-600 w-5 h-5"></i>
-                <div>
-                  <p class="text-sm font-semibold">E-mail</p>
-                  <p class="text-xs text-gray-500">vybtek@gmail.com</p>
-                </div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-phone text-blue-600 w-5 h-5"></i>
-                <div>
-                  <p class="text-sm font-semibold">Phone</p>
-                  <p class="text-xs text-gray-500">+91 9116560069</p>
-                </div>
-              </div>
-            </div>
+    <!-- Address -->
+    <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-location-dot text-blue-600 w-5 h-5"></i>
+          <a href="https://www.google.com/maps/search/Amrit+shree,+502,+Ashok+Nagar,+Udaipur,+Rajasthan+313001" target="_blank" class="flex flex-col">
+            <p class="text-sm font-semibold">Address</p>
+            <p class="text-xs text-gray-500">Amrit shree, 502, Ashok Nagar, Udaipur, Rajasthan 313001</p>
+        </a>
+    </div>
+
+    <!-- E-mail -->
+    <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-envelope text-blue-600 w-5 h-5"></i>
+        <a href="mailto:vybtek@gmail.com" target="_blank" class="flex flex-col">
+            <p class="text-sm font-semibold">E-mail</p>
+            <p class="text-xs text-gray-500">vybtek@gmail.com</p>
+        </a>
+    </div>
+
+    <!-- Phone -->
+    <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-phone text-blue-600 w-5 h-5"></i>
+        <a href="tel:+919116560069" class="flex flex-col">
+            <p class="text-sm font-semibold">Phone</p>
+            <p class="text-xs text-gray-500">+91 9116560069</p>
+        </a>
+    </div>
+</div>
+
           </div>
         </div>
 
@@ -47,7 +53,7 @@ class SpecialHeader extends HTMLElement {
           <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <!-- Menu -->
             <ul id="nav-menu" class="hidden md:flex space-x-8">
-              <li><a href="index" class="nav-link hover:opacity-80">Home</a></li>
+              <li><a href="index.html" class="nav-link hover:opacity-80">Home</a></li>
               <li><a href="about" class="nav-link hover:opacity-80">About</a></li>
              
               <!-- Services Dropdown -->
@@ -64,7 +70,7 @@ class SpecialHeader extends HTMLElement {
               </li>
 
               <li><a href="blog" class="nav-link hover:opacity-80">Blog</a></li>
-              <li><a href="contact" class="nav-link hover:opacity-80">Contact</a></li>
+              <li><a href="contact.html" class="nav-link hover:opacity-80">Contact</a></li>
               <!-- Pages Dropdown -->
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">More ▾</button>
@@ -181,8 +187,7 @@ class SpecialFooter extends HTMLElement {
               VybTek
             </h2>
             <p class="text-gray-600 mt-2">
-              Sedut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium dolore.
+              From Software Design to Digital Branding – Your Trusted Tech Partner.
             </p>
             <div class="flex space-x-3 mt-4">
               <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
@@ -207,14 +212,30 @@ class SpecialFooter extends HTMLElement {
 
           <!-- Contact Info Section -->
           <div>
-            <h3 class="text-lg font-semibold">Contact Info</h3>
-            <ul class="mt-2 space-y-2 text-gray-600">
-              <li><i class="fas fa-map-marker-alt text-blue-500"></i> Udaipur</li>
-              <li><i class="fas fa-phone text-blue-500"></i> +91 9116560069</li>
-              <li><i class="fas fa-envelope text-blue-500"></i> vybtek@gmail.com</li>
-              <li><i class="fas fa-clock text-blue-500"></i> Opening Hours: 10:00 - 18:00</li>
-            </ul>
-          </div>
+    <h3 class="text-lg font-semibold">Contact Info</h3>
+    <ul class="mt-2 space-y-2 text-gray-600">
+        <li>
+            <a href="https://maps.app.goo.gl/bhadKHqrtPvyghnb7" target="_blank" class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-blue-500"></i>
+                <span>Amrit shree, 502, Ashok Nagar, Udaipur, Rajasthan 313001</span>
+            </a>
+        </li>
+        <li>
+            <a href="tel:+919116560069" class="flex items-center space-x-2">
+                <i class="fas fa-phone text-blue-500"></i>
+                <span>+91 9116560069</span>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:vybtek@gmail.com" class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-blue-500"></i>
+                <span>vybtek@gmail.com</span>
+            </a>
+        </li>
+         <li><i class="fas fa-clock text-blue-500"></i> Opening Hours: 10:00 - 18:00</li>
+    </ul>
+ </div>
+
         </div>
 
         <!-- Footer Bottom -->
