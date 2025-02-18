@@ -113,8 +113,8 @@ class SpecialHeader extends HTMLElement {
   </div>
 
   
-  <a href="blog.html" class="nav-link block hover:bg-gray-200 text-black py-2">Blog</a>
-  <a href="contact.html" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
+  <a href="blog" class="nav-link block hover:bg-gray-200 text-black py-2">Blog</a>
+  <a href="contact" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
   <div class="relative group">
     <button class="w-full hover:bg-gray-200 text-left flex justify-between items-center text-black py-2">
       More <i class="fas fa-chevron-down"></i>
