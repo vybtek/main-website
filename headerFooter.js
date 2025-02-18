@@ -53,7 +53,7 @@ class SpecialHeader extends HTMLElement {
           <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <!-- Menu -->
             <ul id="nav-menu" class="hidden md:flex space-x-8">
-              <li><a href="index.html" class="nav-link hover:opacity-80">Home</a></li>
+              <!--<li><a href="index.html" class="nav-link hover:opacity-80">Home</a></li> -->
               <li><a href="about" class="nav-link hover:opacity-80">About</a></li>
              
               <!-- Services Dropdown -->
@@ -70,7 +70,7 @@ class SpecialHeader extends HTMLElement {
               </li>
 
               <li><a href="blog" class="nav-link hover:opacity-80">Blog</a></li>
-              <li><a href="contact.html" class="nav-link hover:opacity-80">Contact</a></li>
+              <li><a href="contact" class="nav-link hover:opacity-80">Contact</a></li>
               <!-- Pages Dropdown -->
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">More ▾</button>
@@ -101,7 +101,8 @@ class SpecialHeader extends HTMLElement {
           </div>
 
           <div id="mobile-menu" class="hidden md:hidden flex-col bg-white shadow-lg p-4 space-y-3">
-  <a href="index" class="nav-link block hover:bg-gray-200 text-black py-2">Home</a>
+           <!--<a href="index" class="nav-link block hover:bg-gray-200 text-black py-2">Home</a> -->
+  
   <a href="about" class="nav-link block hover:bg-gray-200 text-black py-2">About</a>
 
   <div class="relative group">
