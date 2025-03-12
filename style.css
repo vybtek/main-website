@@ -34,6 +34,38 @@
   position: relative;
 }
 
+@keyframes fillProgress {
+  from {
+      width: 0%;
+  }
+  to {
+      width: var(--progress);
+  }
+}
+
+.progress-bar {
+  width: 0;
+  animation: fillProgress 2s ease-in-out forwards;
+}
+
+@keyframes countUp {
+  from { content: "0%"; }
+  10% { content: "10%"; }
+  20% { content: "20%"; }
+  30% { content: "30%"; }
+  40% { content: "40%"; }
+  50% { content: "50%"; }
+  60% { content: "60%"; }
+  70% { content: "70%"; }
+  80% { content: "80%"; }
+  90% { content: "90%"; }
+  100% { content: attr(data-target) "%"; }
+}
+.percentage::after {
+  content: "0%";
+  animation: countUp 2s ease-in-out forwards;
+}
+
 
 @keyframes move-dot {
   0% {
@@ -92,5 +124,48 @@
   text-decoration: none;
 }
 
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradientMove 6s infinite linear;
+}
+
+/* Floating Effect */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-floating {
+  animation: floating 4s infinite ease-in-out;
+}
+
+/* Fade-in and Scale for Heading */
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+/* Slide-in Effect for Paragraph */
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.5s; /* Delayed to appear after heading */
+}
 
 

@@ -2,7 +2,7 @@ class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
-        <div class=" shadow-md">
+        <div class="bg-white shadow-md">
           <div class="container mx-auto flex items-center justify-between py-3 px-6">
             <!-- Logo -->
             <a href="/" class="flex items-center ">
