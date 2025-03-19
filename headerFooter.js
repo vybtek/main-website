@@ -69,7 +69,7 @@ class SpecialHeader extends HTMLElement {
                 </div>
               </li>
 
-              <li><a href="blog" class="nav-link hover:opacity-80">Blog</a></li>
+              <li><a href="projects" class="nav-link hover:opacity-80">Projects</a></li>
               <li><a href="contact" class="nav-link hover:opacity-80">Contact</a></li>
               <!-- Pages Dropdown -->
               <li class="nav-link relative group">
@@ -120,7 +120,7 @@ class SpecialHeader extends HTMLElement {
   </div>
 
   
-  <a href="blog" class="nav-link block hover:bg-gray-200 text-black py-2">Blog</a>
+  <a href="projects" class="nav-link block hover:bg-gray-200 text-black py-2">Projects</a>
   <a href="contact" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
   <div class="relative group">
     <button class="w-full hover:bg-gray-200 text-left flex justify-between items-center text-black py-2">
@@ -246,7 +246,7 @@ class SpecialFooter extends HTMLElement {
             <a href="index" class="footer-link">Home</a>
             <a href="about" class="footer-link">About</a>
             <a href="services" class="footer-link">Services</a>
-            <a href="blog" class="footer-link">Blog</a>
+            <a href="projects" class="footer-link">Projects</a>
             <a href="careers" class="footer-link">Career</a>
             <a href="faq" class="footer-link">FAQs</a>
             <a href="contact" class="footer-link">Contact Us</a>
