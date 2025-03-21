@@ -9,6 +9,11 @@
       type="image/png"
       href="./images/Untitled_design__4_-removebg-preview (1).png"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <meta
       name="description"
       content="vybtek IT solutions provide you a better work experience"
@@ -110,9 +115,7 @@
       </section>
 
       <!-- about area section -->
-      <section
-        class="relative bg-white py-20 px-6"
-      >
+      <section class="relative bg-white py-20 px-6">
         <div
           class="container mx-auto flex flex-col-reverse lg:flex-row items-center"
         >
@@ -177,42 +180,54 @@
             <!-- Skills Progress Bars -->
             <div class="mt-6 space-y-4">
               <div>
-                  <div class="flex justify-between text-gray-800 font-medium">
-                      <span>Software Development</span>
-                      <span class="percentage" data-target="92"></span>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-                      <div class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar" style="--progress: 92%;"></div>
-                  </div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                  <span>Software Development</span>
+                  <span class="percentage" data-target="92"></span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar"
+                    style="--progress: 92%"
+                  ></div>
+                </div>
               </div>
               <div>
-                  <div class="flex justify-between text-gray-800 font-medium">
-                      <span>Web Designing</span>
-                      <span class="percentage" data-target="80"></span>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-                      <div class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar" style="--progress: 80%;"></div>
-                  </div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                  <span>Web Designing</span>
+                  <span class="percentage" data-target="80"></span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar"
+                    style="--progress: 80%"
+                  ></div>
+                </div>
               </div>
               <div>
-                  <div class="flex justify-between text-gray-800 font-medium">
-                      <span>Digital Marketing</span>
-                      <span class="percentage" data-target="95"></span>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-                      <div class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar" style="--progress: 95%;"></div>
-                  </div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                  <span>Digital Marketing</span>
+                  <span class="percentage" data-target="95"></span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar"
+                    style="--progress: 95%"
+                  ></div>
+                </div>
               </div>
               <div>
-                  <div class="flex justify-between text-gray-800 font-medium">
-                      <span>IT Tech Support</span>
-                      <span class="percentage" data-target="78"></span>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-                      <div class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar" style="--progress: 78%;"></div>
-                  </div>
+                <div class="flex justify-between text-gray-800 font-medium">
+                  <span>IT Tech Support</span>
+                  <span class="percentage" data-target="78"></span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-blue-900 h-2 rounded-full progress-bar"
+                    style="--progress: 78%"
+                  ></div>
+                </div>
               </div>
-          </div>
+            </div>
 
             <!-- Button -->
             <div class="mt-8">
@@ -229,9 +244,7 @@
 
       <!-- Services section -->
 
-      <section
-        class="py-16 px-4 text-center bg-white"
-      >
+      <section class="py-16 px-4 text-center bg-white">
         <h3 class="text-black font-semibold text-sm uppercase">Services</h3>
         <h2 class="text-3xl font-bold mt-2">
           We Are Offering All Kinds of <br />
@@ -354,6 +367,85 @@
         </div>
       </section>
 
+      <!-- Testimonials Section -->
+      <section class="py-8 px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">Our Lucky Customers</h2>
+          <p class="text-gray-600">
+            Visit our shop to see amazing creations from our designers.
+          </p>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg p-6 max-w-sm text-center">
+                <h3 class="text-lg font-semibold mt-4">Kanchan Khera</h3>
+                <h4 class="text-sm font-semibold mt-2 text-gray-400">
+                  (Founder & CEO - Zykrr)
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  Our company thrives on sharp intellect and an exceptional
+                  capacity to handle pressure. We are always ready to fully
+                  apply ourselves to challenges and get to the core of every
+                  problem. With minimal guidance, we consistently arrive at the
+                  best solutions for the moment. Our strengths shine brightest
+                  in moments of extreme pressure, when many others begin to
+                  falter. During such times, our ability to put in long hours
+                  without losing focus makes us an extremely valuable and
+                  reliable team.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg p-6 max-w-sm text-center">
+                <h3 class="text-lg font-semibold mt-4">Poonam Dungerwal</h3>
+                <h4 class="text-sm font-semibold mt-2 text-gray-400">
+                  (Founder & CEO - Xportmine)
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  It has been a pleasure working with the incredible team at
+                  Xportmine over the past 11 months. During this time, we have
+                  collaborated on multiple projects, including building CRMs,
+                  front-end development, and designing innovative solutions. Our
+                  team takes strong ownership of every task and consistently
+                  drives for results. We have the ability to see and address
+                  everything from the big picture to the smallest details.
+                  Creative, energetic, solutions-oriented, and highly motivated,
+                  we thrive on collaboration and excellent communication to
+                  achieve success.
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg p-6 max-w-sm text-center">
+                <h3 class="text-lg font-semibold mt-4">Karan Mehra</h3>
+                <h4 class="text-sm font-semibold mt-2 text-gray-400">
+                  (Founder & CEO - Tyke Technologies Pvt. Ltd.)
+                </h4>
+                <p class="text-gray-600 mt-2">
+                  Our team is driven by passion and an entrepreneurial mindset.
+                  It has been a pleasure working together, continuously
+                  innovating and pushing boundaries to achieve excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
       <!-- working progress section -->
       <section
         class="max-w-full mx-auto grid md:grid-cols-3 gap-6 items-center p-6 bg-white"
@@ -429,6 +521,33 @@
 
       <!-- Footer section start -->
       <special-footer></special-footer>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          },
+        });
+      </script>
 
       <!-- scroll up button -->
       <button id="scrollUpBtn" onclick="scrollToTop()">
