@@ -50,22 +50,7 @@
                   class="flex flex-col text-white"
                 >
                   <p class="font-semibold">Email:</p>
-                  <p>vybtek@gmail.com</p>
-                </a>
-              </div>
-
-              <!-- Phone -->
-              <div class="flex items-center gap-3">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full"
-                >
-                  <span class="text-white text-lg"
-                    ><i class="fas fa-phone"></i
-                  ></span>
-                </div>
-                <a href="tel:+919116560069" class="flex flex-col text-white">
-                  <p class="font-semibold">Phone:</p>
-                  <p>+91 9116560069</p>
+                  <p>info@vybtek.com</p>
                 </a>
               </div>
 
@@ -81,7 +66,7 @@
                 <div>
                   <p class="font-semibold">Address:</p>
                   <p>
-                    Amrit shree, 502, Ashok Nagar, Udaipur, Rajasthan 313001
+                    Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001
                   </p>
                 </div>
               </div>
@@ -94,37 +79,49 @@
               Get in Touch
             </h3>
             <h2 class="text-3xl font-bold mt-2">Fill The Form Below</h2>
-            <form class="mt-6 space-y-4">
+            <form class="mt-6 space-y-4" id="contact-form">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Name"
-                  class="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  name="name"
+                  id="name"
+                  class="name w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 <input
                   type="email"
                   placeholder="E-Mail"
-                  class="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  name="email"
+                  id="email"
+                  class="email w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
-                  type="text"
+                  type="tel"
                   placeholder="Phone Number"
-                  class="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  name="phone"
+                  id="phone"
+                  class="phone w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 <input
                   type="text"
-                  placeholder="Your Website"
-                  class="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject"
+                  class="subject w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <textarea
                 placeholder="Your message Here"
-                class="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 h-28"
+                name="message"
+                id="message"
+                class="message w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 h-28"
               ></textarea>
               <button
                 type="submit"
+                name="submit"
+                onclick="sendToWhatspp()"
                 class="bg-gradient-to-r from-blue-500 to-blue-900 hover:bg-gradient-to-r hover:from-blue-900 hover:to-blue-500 text-white py-3 px-6 rounded-full font-semibold shadow-md hover:opacity-90"
               >
                 Submit Now
@@ -160,5 +157,66 @@
     </div>
 
     <script src="headerFooter.js"></script>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevents default form submission
+
+          // You can send form data using Fetch API if needed
+          const formData = new FormData(this);
+
+          // Example: Sending form data to a backend (optional)
+
+          fetch("your-api-endpoint", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+
+          // Redirect to the home page
+          window.location.href = "index.html"; // Change this to your actual home page URL
+        });
+    </script>
+
+    <script>
+      function sendToWhatspp() {
+        number = "+9116560069";
+        name = document.getElementById("name").value;
+        email = document.getElementById("email").value;
+        phone = document.getElementById("phone").value;
+        subject = document.getElementById("subject").value;
+        message = document.getElementById("message").value;
+
+        var url =
+          "https://wa.me/" +
+          number +
+          "?text=" +
+          "Name : " +
+          name +
+          "%0a" +
+          "Email : " +
+          email +
+          "%0a" +
+          "Phone : " +
+          phone +
+          "%0a" +
+          "Subject : " +
+          subject +
+          "%0a" +
+          "Message : " +
+          message +
+          "%0a%0a";
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
   </body>
 </html>

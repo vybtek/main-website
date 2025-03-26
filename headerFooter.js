@@ -22,7 +22,7 @@ class SpecialHeader extends HTMLElement {
         <i class="fa-solid fa-location-dot text-blue-600 w-5 h-5"></i>
           <a href="https://www.google.com/maps/search/Amrit+shree,+502,+Ashok+Nagar,+Udaipur,+Rajasthan+313001" target="_blank" class="flex flex-col">
             <p class="text-sm font-semibold">Address</p>
-            <p class="text-xs text-gray-500">Amrit shree, 502, Ashok Nagar, Udaipur, Rajasthan 313001</p>
+            <p class="text-xs text-gray-500">Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</p>
         </a>
     </div>
 
@@ -31,16 +31,7 @@ class SpecialHeader extends HTMLElement {
         <i class="fa-solid fa-envelope text-blue-600 w-5 h-5"></i>
         <a href="mailto:vybtek@gmail.com" target="_blank" class="flex flex-col">
             <p class="text-sm font-semibold">E-mail</p>
-            <p class="text-xs text-gray-500">vybtek@gmail.com</p>
-        </a>
-    </div>
-
-    <!-- Phone -->
-    <div class="flex items-center space-x-2">
-        <i class="fa-solid fa-phone text-blue-600 w-5 h-5"></i>
-        <a href="tel:+919116560069" class="flex flex-col">
-            <p class="text-sm font-semibold">Phone</p>
-            <p class="text-xs text-gray-500">+91 9116560069</p>
+            <p class="text-xs text-gray-500">info@vybtek.com</p>
         </a>
     </div>
 </div>
@@ -75,7 +66,7 @@ class SpecialHeader extends HTMLElement {
               <li class="nav-link relative group">
                 <button class="nav-link hover:opacity-80">More ▾</button>
                 <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                <a href="ourteam" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a>
+                 <!--  <a href="ourteam" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a> -->
                   <a href="faq" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQs</a>
                   <a href="careers" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
                 </div>
@@ -127,7 +118,7 @@ class SpecialHeader extends HTMLElement {
       More <i class="fas fa-chevron-down"></i>
     </button>
     <div class="hidden group-hover:block bg-gray-100 p-2 space-y-2">
-      <a href="ourteam" class="nav-link block hover:bg-gray-200 text-black">Our Team</a>
+     <!-- <a href="ourteam" class="nav-link block hover:bg-gray-200 text-black">Our Team</a> -->    
       <a href="faq" class="nav-link block hover:bg-gray-200 text-black">FAQs</a>
       <a href="careers" class="nav-link block hover:bg-gray-200 text-black">Careers</a>
     </div>
@@ -218,19 +209,13 @@ class SpecialFooter extends HTMLElement {
         <li>
             <a href="https://maps.app.goo.gl/bhadKHqrtPvyghnb7" target="_blank" class="flex items-center space-x-2">
                 <i class="fas fa-map-marker-alt text-blue-500"></i>
-                <span>Amrit shree, 502, Ashok Nagar, Udaipur, Rajasthan 313001</span>
-            </a>
-        </li>
-        <li>
-            <a href="tel:+919116560069" class="flex items-center space-x-2">
-                <i class="fas fa-phone text-blue-500"></i>
-                <span>+91 9116560069</span>
+                <span>Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</span>
             </a>
         </li>
         <li>
             <a href="mailto:vybtek@gmail.com" class="flex items-center space-x-2">
                 <i class="fas fa-envelope text-blue-500"></i>
-                <span>vybtek@gmail.com</span>
+                <span>info@vybtek.com</span>
             </a>
         </li>
          <li><i class="fas fa-clock text-blue-500"></i> Opening Hours: 10:00 - 18:00</li>
@@ -251,7 +236,7 @@ class SpecialFooter extends HTMLElement {
             <a href="faq" class="footer-link">FAQs</a>
             <a href="contact" class="footer-link">Contact Us</a>
             <a href="sitemap" class="footer-link">Sitemap</a>
-            <a href="ourteam" class="footer-link">Our Team</a>
+             <!--  <a href="ourteam" class="footer-link">Our Team</a> -->         
           </div>
         </div>
       </footer>`;
