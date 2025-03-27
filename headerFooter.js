@@ -29,7 +29,7 @@ class SpecialHeader extends HTMLElement {
     <!-- E-mail -->
     <div class="flex items-center space-x-2">
         <i class="fa-solid fa-envelope text-blue-600 w-5 h-5"></i>
-        <a href="mailto:vybtek@gmail.com" target="_blank" class="flex flex-col">
+        <a href="mailto:info@vybtek.com" target="_blank" class="flex flex-col">
             <p class="text-sm font-semibold">E-mail</p>
             <p class="text-xs text-gray-500">info@vybtek.com</p>
         </a>
@@ -213,7 +213,7 @@ class SpecialFooter extends HTMLElement {
             </a>
         </li>
         <li>
-            <a href="mailto:vybtek@gmail.com" class="flex items-center space-x-2">
+            <a href="mailto:info@vybtek.com" class="flex items-center space-x-2">
                 <i class="fas fa-envelope text-blue-500"></i>
                 <span>info@vybtek.com</span>
             </a>
