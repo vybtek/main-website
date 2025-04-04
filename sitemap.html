@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ Page</title>
+    <title>Sitemap</title>
     <link
       rel="icon"
       type="image/png"
@@ -17,104 +17,98 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body>
+
+  <body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
     <special-header></special-header>
-    <div class="bg-gray-200">
-      <main class="container mx-auto py-10 px-6">
-        <h1 class="text-3xl font-bold text-center mb-8">Sitemap</h1>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold mb-3">Main Pages</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="index.html" class="text-blue-600 hover:underline"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="text-blue-600 hover:underline"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="blog.html" class="text-blue-600 hover:underline"
-                  >Blogs</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="text-blue-600 hover:underline"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold mb-3">Services</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="software.html" class="text-blue-600 hover:underline"
-                  >Software Development</a
-                >
-              </li>
-              <li>
-                <a href="design.html" class="text-blue-600 hover:underline"
-                  >Web Design</a
-                >
-              </li>
-              <li>
-                <a href="marketing.html" class="text-blue-600 hover:underline"
-                  >Digital Marketing</a
-                >
-              </li>
-              <li>
-                <a href="techsupport.html" class="text-blue-600 hover:underline"
-                  >IT Tech Support</a
-                >
-              </li>
-              <li>
-                <a
-                  href="consultation.html"
-                  class="text-blue-600 hover:underline"
-                  >Tech Consultation</a
-                >
-              </li>
-              <li>
-                <a href="outsourcing.html" class="text-blue-600 hover:underline"
-                  >Tech Outsourcing</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold mb-3">Pages</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="ourteam.html" class="text-blue-600 hover:underline"
-                  >Our Team</a
-                >
-              </li>
-              <li>
-                <a href="faq.html" class="text-blue-600 hover:underline"
-                  >FAQs</a
-                >
-              </li>
-              <li>
-                <a href="careers.html" class="text-blue-600 hover:underline"
-                  >Careers</a
-                >
-              </li>
-            </ul>
-          </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-14">
+      <h1
+        class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-600"
+      >
+        Sitemap
+      </h1>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Main Pages -->
+        <div class="bg-white p-8">
+          <h2 class="text-2xl font-semibold mb-4">Main Pages</h2>
+          <ul class="space-y-3">
+            <li><a href="/" class="text-blue-600 hover:underline">Home</a></li>
+            <li>
+              <a href="about" class="text-blue-600 hover:underline">About Us</a>
+            </li>
+            <li>
+              <a href="projects" class="text-blue-600 hover:underline"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="contact" class="text-blue-600 hover:underline"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
         </div>
-      </main>
 
-      <special-footer></special-footer>
+        <!-- Services -->
+        <div class="bg-white p-8">
+          <h2 class="text-2xl font-semibold mb-4">Services</h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="software" class="text-blue-600 hover:underline"
+                >Software Development</a
+              >
+            </li>
+            <li>
+              <a href="design" class="text-blue-600 hover:underline"
+                >Web Design</a
+              >
+            </li>
+            <li>
+              <a href="marketing" class="text-blue-600 hover:underline"
+                >Digital Marketing</a
+              >
+            </li>
+            <li>
+              <a href="techsupport" class="text-blue-600 hover:underline"
+                >IT Tech Support</a
+              >
+            </li>
+            <li>
+              <a href="consultation" class="text-blue-600 hover:underline"
+                >Tech Consultation</a
+              >
+            </li>
+            <li>
+              <a href="outsourcing" class="text-blue-600 hover:underline"
+                >Tech Outsourcing</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <!-- scroll up button -->
-      <button id="scrollUpBtn" onclick="scrollToTop()">
-        <i class="fas fa-long-arrow-alt-up"></i>
-      </button>
-    </div>
+        <!-- Other Pages -->
+        <div class="bg-white p-8">
+          <h2 class="text-2xl font-semibold mb-4">Pages</h2>
+          <ul class="space-y-3">
+            <li>
+              <a href="faq" class="text-blue-600 hover:underline">FAQs</a>
+            </li>
+            <li>
+              <a href="careers" class="text-blue-600 hover:underline"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <special-footer></special-footer>
+
+    <!-- Scroll Up Button -->
+    <button id="scrollUpBtn" onclick="scrollToTop()" title="Scroll to top">
+      <i class="fas fa-arrow-up text-xl"></i>
+    </button>
 
     <script src="headerFooter.js"></script>
   </body>

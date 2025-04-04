@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-
 .parent-container {
   overflow: visible;
 }
-
 
 #scrollUpBtn {
   position: fixed;
@@ -43,10 +42,10 @@ body, html {
 
 @keyframes fillProgress {
   from {
-      width: 0%;
+    width: 0%;
   }
   to {
-      width: var(--progress);
+    width: var(--progress);
   }
 }
 
@@ -56,23 +55,44 @@ body, html {
 }
 
 @keyframes countUp {
-  from { content: "0%"; }
-  10% { content: "10%"; }
-  20% { content: "20%"; }
-  30% { content: "30%"; }
-  40% { content: "40%"; }
-  50% { content: "50%"; }
-  60% { content: "60%"; }
-  70% { content: "70%"; }
-  80% { content: "80%"; }
-  90% { content: "90%"; }
-  100% { content: attr(data-target) "%"; }
+  from {
+    content: "0%";
+  }
+  10% {
+    content: "10%";
+  }
+  20% {
+    content: "20%";
+  }
+  30% {
+    content: "30%";
+  }
+  40% {
+    content: "40%";
+  }
+  50% {
+    content: "50%";
+  }
+  60% {
+    content: "60%";
+  }
+  70% {
+    content: "70%";
+  }
+  80% {
+    content: "80%";
+  }
+  90% {
+    content: "90%";
+  }
+  100% {
+    content: attr(data-target) "%";
+  }
 }
 .percentage::after {
   content: "0%";
   animation: countUp 2s ease-in-out forwards;
 }
-
 
 @keyframes move-dot {
   0% {
@@ -103,8 +123,6 @@ body, html {
   animation: fillProgress 2s ease-out forwards;
 }
 
-
-
 .active-link {
   font-weight: bold;
   color: rgb(35, 220, 237) !important;
@@ -113,11 +131,9 @@ body, html {
 
 .inactive-link {
   font-weight: normal;
-  color: white ;
+  color: white;
   text-decoration: none;
 }
-
-
 
 .active-footer-link {
   font-weight: bold;
@@ -131,11 +147,16 @@ body, html {
   text-decoration: none;
 }
 
-
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-gradient {
@@ -145,9 +166,15 @@ body, html {
 
 /* Floating Effect */
 @keyframes floating {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .animate-floating {
@@ -156,8 +183,14 @@ body, html {
 
 /* Fade-in and Scale for Heading */
 @keyframes fadeInScale {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .animate-fade-in-scale {
@@ -166,8 +199,14 @@ body, html {
 
 /* Slide-in Effect for Paragraph */
 @keyframes slideIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-slide-in {
@@ -175,10 +214,8 @@ body, html {
   animation-delay: 0.5s; /* Delayed to appear after heading */
 }
 
-
-
- /* Style the pagination */
- .swiper-pagination {
+/* Style the pagination */
+.swiper-pagination {
   position: relative !important; /* Moves it below the testimonials */
   margin-top: 20px; /* Adds space between testimonials and pagination */
 }
@@ -197,5 +234,3 @@ body, html {
   background-color: #1e40af; /* Dark blue for active bullet */
   transform: scale(1.2);
 }
-
-
