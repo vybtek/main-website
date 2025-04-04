@@ -181,14 +181,13 @@
               console.error("Error:", error);
             });
 
-          // Redirect to the home page
-          window.location.href = "index.html"; // Change this to your actual home page URL
+          window.location.href = "contact.html";
         });
     </script>
 
     <script>
       function sendToWhatspp() {
-        let number = "+9116560069";
+        let number = "+919116560069";
         let name = document.getElementById("name").value.trim();
         let email = document.getElementById("email").value.trim();
         let phone = document.getElementById("phone").value.trim();
@@ -221,7 +220,11 @@
           message +
           "%0a%0a";
 
+        // Open WhatsApp in new tab
         window.open(url, "_blank").focus();
+
+        // Reset the form
+        document.getElementById("contact-form").reset();
       }
     </script>
   </body>
