@@ -1,168 +1,147 @@
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <header>
-        <div class="bg-white shadow-md">
-          <div class="container mx-auto flex items-center justify-between py-3 px-6">
-            <!-- Logo -->
-            <a href="/" class="flex items-center ">
-              <img src="./images/logo.png" alt="Logo" class="w-14 h-14" />
-              <span class="text-xl font-bold">VybTek</span>
-            </a>
-
-            <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden text-blue-600 text-xl">
-              <i class="fas fa-bars"></i>
-            </button>
-
-            <!-- Contact Info -->
-            <div class="hidden md:flex items-center space-x-8">
-    <!-- Address -->
-    <div class="flex items-center space-x-2">
-        <i class="fa-solid fa-location-dot text-blue-600 w-5 h-5"></i>
-          <a href="https://www.google.com/maps/search/Amrit+shree,+502,+Ashok+Nagar,+Udaipur,+Rajasthan+313001" target="_blank" class="flex flex-col">
-            <p class="text-sm font-semibold">Address</p>
-            <p class="text-xs text-gray-500">Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</p>
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-gradient-to-b from-white to-blue-100/80 shadow-md">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="w-12 h-12 object-contain" />
+          <span class="text-2xl font-extrabold text-gray-700">VybTek</span>
         </a>
-    </div>
 
-    <!-- E-mail -->
-    <div class="flex items-center space-x-2">
-        <i class="fa-solid fa-envelope text-blue-600 w-5 h-5"></i>
-        <a href="mailto:info@vybtek.com" target="_blank" class="flex flex-col">
-            <p class="text-sm font-semibold">E-mail</p>
-            <p class="text-xs text-gray-500">info@vybtek.com</p>
-        </a>
-    </div>
-</div>
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="md:hidden text-blue-700 text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
 
-          </div>
-        </div>
-
-        <!-- Navigation Bar -->
-        <nav class="bg-gradient-to-r from-blue-900 to-blue-600 text-white">
-          <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <!-- Menu -->
-            <ul id="nav-menu" class="hidden md:flex space-x-8">
-              <!--<li><a href="index.html" class="nav-link hover:opacity-80">Home</a></li> -->
-              <li><a href="about" class="nav-link hover:opacity-80">About</a></li>
-             
-              <!-- Services Dropdown -->
-              <li class="nav-link relative group">
-                <button class="nav-link hover:opacity-80">Services ▾</button>
-                <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                  <a href="software" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Software Development</a>
-                  <a href="design" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Web Design</a>
-                  <a href="marketing" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Digital Marketing</a>
-                  <a href="techsupport" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">IT Tech Support</a>
-                  <a href="outsourcing" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Outsourcing</a>
-                  <a href="consultation" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Tech Consultation</a>
-                </div>
-              </li>
-
-              <li><a href="projects" class="nav-link hover:opacity-80">Projects</a></li>
-              <li><a href="contact" class="nav-link hover:opacity-80">Contact</a></li>
-              <!-- Pages Dropdown -->
-              <li class="nav-link relative group">
-                <button class="nav-link hover:opacity-80">More ▾</button>
-                <div class="absolute left-0 p-1 w-48 bg-white shadow-lg rounded-lg hidden group-hover:block z-50">
-                 <!--  <a href="ourteam" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Our Team</a> -->
-                  <a href="faq" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">FAQs</a>
-                  <a href="careers" class="nav-link dropdown-item block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a>
-                </div>
-              </li>
-             
-            </ul>
-
-            <!-- Social Icons -->
-            <div class="hidden md:flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://x.com/vybtekIT" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-               <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/vybtek/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com/vybtek_it/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-300">
-                <i class="fab fa-instagram"></i>
-              </a>
+        <!-- Contact + Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <!-- Contact Info -->
+          <div class="flex gap-6 text-sm">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-blue-700 text-lg"></i>
+              <div>
+                <p class="font-semibold">Address</p>
+                <a href="https://www.google.com/maps/search/Amrit+shree,+319,+Ashok+Nagar,+Udaipur,+Rajasthan+313001" target="_blank" class="text-gray-600">Ashok Nagar, Udaipur</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-blue-700 text-lg"></i>
+              <div>
+                <p class="font-semibold">Email</p>
+                <a href="mailto:info@vybtek.com" class="text-gray-600">info@vybtek.com</a>
+              </div>
             </div>
           </div>
 
-          <div id="mobile-menu" class="hidden md:hidden flex-col bg-white shadow-lg p-4 space-y-3">
-           <!--<a href="index" class="nav-link block hover:bg-gray-200 text-black py-2">Home</a> -->
-  
-  <a href="about" class="nav-link block hover:bg-gray-200 text-black py-2">About</a>
+          <!-- Nav Menu -->
+          <ul class="flex gap-6 items-center text-sm font-medium text-blue-900">
+            <li><a href="about" class="nav-link inactive-link">About</a></li>
 
-  <div class="relative group">
-    <button class="w-full hover:bg-gray-200 text-left flex justify-between items-center text-black py-2">
-      Services <i class="fas fa-chevron-down"></i>
-    </button>
-    <div class="hidden group-hover:block bg-gray-100 p-2 space-y-2">
-      <a href="software" class="nav-link block hover:bg-gray-200 text-black">Software Development</a>
-      <a href="design" class="nav-link block hover:bg-gray-200 text-black">Web Design</a>
-      <a href="marketing" class="nav-link block hover:bg-gray-200 text-black">Digital Marketing</a>
-      <a href="techsupport" class="nav-link block hover:bg-gray-200 text-black">IT Tech Support</a>
-      <a href="outsourcing" class="nav-link block hover:bg-gray-200 text-black">Tech Outsourcing</a>
-      <a href="consultation" class="nav-link block hover:bg-gray-200 text-black">Tech Consultation</a>
-    </div>
-  </div>
+            <!-- Services Dropdown -->
+            <li class="relative group">
+              <button class="transition">Services ▾</button>
+              <div class="absolute left-0 top-full w-44 bg-white border shadow-lg rounded-lg p-4 hidden group-hover:block z-50">
+                <ul class="space-y-2 text-gray-800">
+                  <li><a href="software" class="nav-link block hover:text-blue-600">Software Development</a></li>
+                  <li><a href="design" class="nav-link block hover:text-blue-600">Web Design</a></li>
+                  <li><a href="marketing" class="nav-link block hover:text-blue-600">Digital Marketing</a></li>
+                  <li><a href="techsupport" class="nav-link block hover:text-blue-600">IT Tech Support</a></li>
+                  <li><a href="outsourcing" class="nav-link block hover:text-blue-600">Tech Outsourcing</a></li>
+                  <li><a href="consultation" class="nav-link block hover:text-blue-600">Tech Consultation</a></li>
+                </ul>
+              </div>
+            </li>
 
-  
-  <a href="projects" class="nav-link block hover:bg-gray-200 text-black py-2">Projects</a>
-  <a href="contact" class="nav-link block hover:bg-gray-200 text-black py-2">Contact</a>
-  <div class="relative group">
-    <button class="w-full hover:bg-gray-200 text-left flex justify-between items-center text-black py-2">
-      More <i class="fas fa-chevron-down"></i>
-    </button>
-    <div class="hidden group-hover:block bg-gray-100 p-2 space-y-2">
-     <!-- <a href="ourteam" class="nav-link block hover:bg-gray-200 text-black">Our Team</a> -->    
-      <a href="faq" class="nav-link block hover:bg-gray-200 text-black">FAQs</a>
-      <a href="careers" class="nav-link block hover:bg-gray-200 text-black">Careers</a>
-    </div>
-  </div>
-</div>
- 
+            <li><a href="projects" class="nav-link inactive-link">Projects</a></li>
+            <li><a href="contact" class="nav-link inactive-link">Contact</a></li>
+
+            <!-- More Dropdown -->
+            <li class="relative group">
+              <button class="transition">More ▾</button>
+              <div class="absolute left-0 top-full w-28 bg-white border shadow-lg rounded-lg p-4 hidden group-hover:block z-50">
+                <a href="faq" class="nav-link block hover:text-blue-600 mb-1">FAQs</a>
+                <a href="careers" class="nav-link block hover:text-blue-600">Careers</a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Social Icons -->
+          <div class="flex gap-3 text-blue-800 text-lg">
+            <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/vybtekIT" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/vybtek/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/vybtek_it/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer Mobile Menu -->
+      <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full bg-white z-40 overflow-y-auto transition-all px-6 pt-20 pb-10">
+        <button id="menu-close" class="absolute top-4 right-4 text-3xl text-gray-800"><i class="fas fa-times"></i></button>
+        <nav class="space-y-4 text-blue-900 text-base font-medium">
+          <a href="about.html" class="nav-link block py-2 hover:text-blue-700">About</a>
+          <details>
+            <summary class="py-2 cursor-pointer">Services</summary>
+            <div class="ml-4 space-y-2">
+              <a href="software" class="nav-link block hover:text-blue-700">Software Development</a>
+              <a href="design" class="nav-link block hover:text-blue-700">Web Design</a>
+              <a href="marketing" class="nav-link block hover:text-blue-700">Digital Marketing</a>
+              <a href="techsupport" class="nav-link block hover:text-blue-700">IT Tech Support</a>
+              <a href="outsourcing" class="nav-link block hover:text-blue-700">Tech Outsourcing</a>
+              <a href="consultation" class="nav-link block hover:text-blue-700">Tech Consultation</a>
+            </div>
+          </details>
+          <a href="projects" class="nav-link block py-2 hover:text-blue-700">Projects</a>
+          <a href="contact" class="nav-link block py-2 hover:text-blue-700">Contact</a>
+          <details>
+            <summary class="py-2 cursor-pointer">More</summary>
+            <div class="ml-4 space-y-2">
+              <a href="faq" class="nav-link block hover:text-blue-700">FAQs</a>
+              <a href="careers" class="nav-link block hover:text-blue-700">Careers</a>
+            </div>
+          </details>
         </nav>
-      </header>`;
-
+      </div>
+    </header>
+    `;
     this.activateCurrentNavLink();
     this.setupMobileMenu();
   }
 
   activateCurrentNavLink() {
-    const navLinks = document.querySelectorAll(
-      "#mobile-menu .nav-link, .nav-link"
-    );
-    const currentPath =
-      window.location.pathname.split("/").pop() || "index.html"; // Default to index.html if empty
+    const navLinks = this.querySelectorAll(".nav-link");
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-    navLinks.forEach((link) => {
-      const linkPath = link.getAttribute("href")
-        ? link.getAttribute("href").split("/").pop()
-        : null;
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href")?.split("/").pop();
 
       if (linkPath === currentPath) {
         link.classList.add("active-link");
         link.classList.remove("inactive-link");
 
-        // If the link is inside a dropdown, mark its parent button as active
-        const parentDiv = link.closest(".group");
-        if (parentDiv) {
-          parentDiv.querySelector("button").classList.add("active-link");
+        const parentGroup = link.closest(".group");
+        if (parentGroup) {
+          parentGroup.classList.add("active-dropdown");
         }
       } else {
-        link.classList.add("inactive-link");
         link.classList.remove("active-link");
+        link.classList.add("inactive-link");
       }
     });
   }
 
   setupMobileMenu() {
-    this.querySelector("#menu-toggle")?.addEventListener("click", () => {
-      this.querySelector("#mobile-menu").classList.toggle("hidden");
+    const toggleBtn = this.querySelector("#menu-toggle");
+    const closeBtn = this.querySelector("#menu-close");
+    const mobileMenu = this.querySelector("#mobile-menu");
+
+    toggleBtn?.addEventListener("click", () => {
+      mobileMenu.classList.remove("hidden");
+    });
+
+    closeBtn?.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
     });
   }
 }

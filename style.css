@@ -125,13 +125,12 @@ html {
 
 .active-link {
   font-weight: bold;
-  color: rgb(35, 220, 237) !important;
+  color: rgb(15, 66, 234) !important;
   text-decoration: none;
 }
 
 .inactive-link {
   font-weight: normal;
-  color: white;
   text-decoration: none;
 }
 
