@@ -16,7 +16,7 @@ class SpecialHeader extends HTMLElement {
 
         <!-- Contact + Navigation -->
         <div class="hidden md:flex items-center gap-8">
-          <!-- Contact Info -->
+          <!-- Contact Info 
           <div class="flex gap-6 text-sm">
             <div class="flex items-center gap-2">
               <i class="fa-solid fa-location-dot text-blue-700 text-lg"></i>
@@ -32,7 +32,7 @@ class SpecialHeader extends HTMLElement {
                 <a href="mailto:info@vybtek.com" class="text-gray-600">info@vybtek.com</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Nav Menu -->
           <ul class="flex gap-6 items-center text-sm font-medium text-blue-900">
@@ -56,23 +56,23 @@ class SpecialHeader extends HTMLElement {
             <li><a href="projects" class="nav-link inactive-link">Projects</a></li>
             <li><a href="contact" class="nav-link inactive-link">Contact</a></li>
 
-            <!-- More Dropdown -->
+            <!-- 
             <li class="relative group">
               <button class="transition">More ▾</button>
               <div class="absolute left-0 top-full w-28 bg-white border shadow-lg rounded-lg p-4 hidden group-hover:block z-50">
                 <a href="faq" class="nav-link block hover:text-blue-600 mb-1">FAQs</a>
                 <a href="careers" class="nav-link block hover:text-blue-600">Careers</a>
               </div>
-            </li>
+            </li>  -->
           </ul>
 
-          <!-- Social Icons -->
+          <!-- Social Icons 
           <div class="flex gap-3 text-blue-800 text-lg">
             <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://x.com/vybtekIT" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://www.linkedin.com/company/vybtek/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.instagram.com/vybtek_it/" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -94,13 +94,14 @@ class SpecialHeader extends HTMLElement {
           </details>
           <a href="projects" class="nav-link block py-2 hover:text-blue-700">Projects</a>
           <a href="contact" class="nav-link block py-2 hover:text-blue-700">Contact</a>
+           <!--  
           <details>
             <summary class="py-2 cursor-pointer">More</summary>
             <div class="ml-4 space-y-2">
               <a href="faq" class="nav-link block hover:text-blue-700">FAQs</a>
               <a href="careers" class="nav-link block hover:text-blue-700">Careers</a>
             </div>
-          </details>
+          </details> -->
         </nav>
       </div>
     </header>
@@ -160,12 +161,21 @@ class SpecialFooter extends HTMLElement {
             <p class="text-gray-600 mt-2">
               From Software Design to Digital Branding – Your Trusted Tech Partner.
             </p>
-            <div class="flex space-x-3 mt-4">
-              <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://x.com/vybtekIT" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.linkedin.com/company/vybtek/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/vybtek_it/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-            </div>
+           <div class="flex space-x-3 mt-4">
+  <a href="https://www.facebook.com/profile.php?id=61572940687826" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400 text-xl flex items-center justify-center w-10 h-10">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://x.com/vybtekIT" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400 text-xl flex items-center justify-center w-10 h-10">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/vybtek/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400 text-xl flex items-center justify-center w-10 h-10">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.instagram.com/vybtek_it/" target="_blank" class="p-2 bg-white rounded-full shadow-md hover:text-gray-400 text-xl flex items-center justify-center w-10 h-10">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
           </div>
 
           <!-- IT Services Section -->
@@ -185,12 +195,13 @@ class SpecialFooter extends HTMLElement {
           <div>
     <h3 class="text-lg font-semibold">Contact Info</h3>
     <ul class="mt-2 space-y-2 text-gray-600">
-        <li>
-            <a href="https://maps.app.goo.gl/bhadKHqrtPvyghnb7" target="_blank" class="flex items-center space-x-2">
-                <i class="fas fa-map-marker-alt text-blue-500"></i>
-                <span>Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</span>
-            </a>
-        </li>
+       <li>
+  <a href="https://maps.app.goo.gl/bhadKHqrtPvyghnb7" target="_blank" class="flex items-start space-x-2">
+    <i class="fas fa-map-marker-alt text-blue-500 text-lg"></i>
+    <span>Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</span>
+  </a>
+</li>
+
         <li>
             <a href="mailto:info@vybtek.com" class="flex items-center space-x-2">
                 <i class="fas fa-envelope text-blue-500"></i>
