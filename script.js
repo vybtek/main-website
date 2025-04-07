@@ -2,9 +2,10 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// Show/hide button based on scroll position
 window.onscroll = function () {
-    let scrollButton = document.getElementById("scrollUpBtn");
+    const scrollButton = document.getElementById("scrollUpBtn");
+    if (!scrollButton) return; // Exit early if the button isn't found
+
     if (document.documentElement.scrollTop > 100) {
         scrollButton.style.display = "block";
     } else {
