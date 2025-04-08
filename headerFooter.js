@@ -200,8 +200,7 @@ class SpecialFooter extends HTMLElement {
     <i class="fas fa-map-marker-alt text-blue-500 text-lg"></i>
     <span>Amrit shree, 319, Ashok Nagar, Udaipur, Rajasthan 313001</span>
   </a>
-</li>
-
+     </li>
         <li>
             <a href="mailto:info@vybtek.com" class="flex items-center space-x-2">
                 <i class="fas fa-envelope text-blue-500"></i>
@@ -209,10 +208,9 @@ class SpecialFooter extends HTMLElement {
             </a>
         </li>
          <li><i class="fas fa-clock text-blue-500"></i> Opening Hours: 10:00 - 18:00</li>
-    </ul>
- </div>
-
-        </div>
+       </ul>
+       </div>
+         </div>
 
         <!-- Footer Bottom -->
         <div class="mt-10 text-center text-gray-600 border-t pt-4">
