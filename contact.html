@@ -162,12 +162,8 @@
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevents default form submission
-
-          // You can send form data using Fetch API if needed
+          event.preventDefault();
           const formData = new FormData(this);
-
-          // Example: Sending form data to a backend (optional)
 
           fetch("your-api-endpoint", {
             method: "POST",
