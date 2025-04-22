@@ -5,7 +5,7 @@ class SpecialHeader extends HTMLElement {
       <div class="max-w-7xl mx-auto px-6 md:px-10 py-3 flex items-center justify-between">
         <!-- Logo -->
         <a href="/" class="flex items-center">
-          <img src="./images/logo.png" alt="Logo" class="w-12 h-12 object-contain" />
+          <img src="./images/Vybtek Logo  SVG.svg" alt="Logo" class="w-12 h-12 object-contain" />
           <span class="text-2xl font-extrabold text-gray-700">VybTek</span>
         </a>
 
@@ -112,9 +112,10 @@ class SpecialHeader extends HTMLElement {
 
   activateCurrentNavLink() {
     const navLinks = this.querySelectorAll(".nav-link");
-    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const currentPath =
+      window.location.pathname.split("/").pop() || "index.html";
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       const linkPath = link.getAttribute("href")?.split("/").pop();
 
       if (linkPath === currentPath) {
@@ -155,7 +156,7 @@ class SpecialFooter extends HTMLElement {
           <!-- Branding Section -->
           <div>
             <h2 class="text-xl font-bold flex items-center gap-2">
-              <img src="./images/logo.png" alt="vybtek Logo" class="w-12 h-12" /> 
+              <img src="./images/logo-removebg.png" alt="vybtek Logo" class="w-12 h-8" /> 
               VybTek
             </h2>
             <p class="text-gray-600 mt-2">

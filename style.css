@@ -210,18 +210,18 @@ html {
 
 .animate-slide-in {
   animation: slideIn 1s ease-out forwards;
-  animation-delay: 0.5s; /* Delayed to appear after heading */
+  animation-delay: 0.5s;
 }
 
 /* Style the pagination */
 .swiper-pagination {
-  position: relative !important; /* Moves it below the testimonials */
-  margin-top: 20px; /* Adds space between testimonials and pagination */
+  position: relative !important; 
+  margin-top: 20px; 
 }
 
-/* Center the pagination dots */
+/*Pagination dots */
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: #4a5568; /* Dark gray color */
+  background-color: #4a5568; 
   width: 12px;
   height: 12px;
   margin: 5px;
@@ -230,6 +230,6 @@ html {
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1e40af; /* Dark blue for active bullet */
+  background-color: #1e40af; 
   transform: scale(1.2);
 }
