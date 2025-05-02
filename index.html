@@ -339,86 +339,141 @@
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <section class="py-10 px-6 bg-gray-100">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-blue-700 mb-2">
+      <section class="py-8 px-4 sm:py-12 md:py-16 lg:py-20 bg-gray-100">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-700 mb-2"
+          >
             What Our Clients Say
           </h2>
-          <p class="text-gray-600">
+          <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
             Hear from our valued customers about their experiences with us.
           </p>
         </div>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
+        <div class="max-w-7xl mx-auto px-4">
+          <!-- Mobile Swiper -->
+          <div class="md:hidden">
+            <div class="swiper mobile-testimonials-swiper">
+              <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-lg p-6 shadow-lg text-center h-full"
+                  >
+                    <div class="text-blue-700 text-4xl sm:text-5xl">❝</div>
+                    <p class="text-gray-600 mt-3">
+                      Our company thrives on sharp intellect and an exceptional
+                      capacity to handle pressure. We always apply ourselves to
+                      challenges and find the best solutions.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4">Kanchan Khera</h3>
+                    <h4 class="text-sm font-medium mt-1 text-gray-500">
+                      (Founder & CEO - Zykrr)
+                    </h4>
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-lg p-6 shadow-lg text-center h-full"
+                  >
+                    <div class="text-blue-700 text-4xl sm:text-5xl">❝</div>
+                    <p class="text-gray-600 mt-3">
+                      Our team is driven by passion and an entrepreneurial
+                      mindset. It has been a pleasure working together,
+                      innovating, and pushing boundaries.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4">Karan Mehra</h3>
+                    <h4 class="text-sm font-medium mt-1 text-gray-500">
+                      (Founder & CEO - Tyke Technologies)
+                    </h4>
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-lg p-6 shadow-lg text-center h-full"
+                  >
+                    <div class="text-blue-700 text-4xl sm:text-5xl">❝</div>
+                    <p class="text-gray-600 mt-3">
+                      Working with the Xportmine team over the past 11 months
+                      has been an incredible journey. We collaborated on
+                      multiple projects, driving for results.
+                    </p>
+                    <h3 class="text-lg font-semibold mt-4">Poonam Dungerwal</h3>
+                    <h4 class="text-sm font-medium mt-1 text-gray-500">
+                      (Founder & CEO - Xportmine)
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination mt-6"></div>
+            </div>
+          </div>
+
+          <!-- Desktop Grid Layout -->
+          <div
+            class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          >
             <!-- Testimonial 1 -->
             <div
-              class="swiper-slide bg-white rounded-lg p-8 max-w-sm mx-auto shadow-lg text-center"
+              class="bg-white rounded-lg p-6 lg:p-8 shadow-lg text-center h-full flex flex-col"
             >
-              <div class="text-blue-700 text-6xl">❝</div>
-              <p class="text-gray-600 mt-2">
+              <div class="text-blue-700 text-5xl">❝</div>
+              <p class="text-gray-600 mt-3 flex-grow">
                 Our company thrives on sharp intellect and an exceptional
                 capacity to handle pressure. We always apply ourselves to
                 challenges and find the best solutions.
               </p>
-              <h3 class="text-lg font-semibold mt-4">Kanchan Khera</h3>
-              <h4 class="text-sm font-medium mt-1 text-gray-500">
-                (Founder & CEO - Zykrr)
-              </h4>
+              <div class="mt-4">
+                <h3 class="text-lg font-semibold">Kanchan Khera</h3>
+                <h4 class="text-sm font-medium mt-1 text-gray-500">
+                  (Founder & CEO - Zykrr)
+                </h4>
+              </div>
             </div>
 
             <!-- Testimonial 2 -->
             <div
-              class="swiper-slide bg-white rounded-lg p-8 max-w-sm mx-auto shadow-lg text-center"
+              class="bg-white rounded-lg p-6 lg:p-8 shadow-lg text-center h-full flex flex-col"
             >
-              <div class="text-blue-700 text-6xl">❝</div>
-              <p class="text-gray-600 mt-2">
+              <div class="text-blue-700 text-5xl">❝</div>
+              <p class="text-gray-600 mt-3 flex-grow">
                 Our team is driven by passion and an entrepreneurial mindset. It
                 has been a pleasure working together, innovating, and pushing
                 boundaries.
               </p>
-              <h3 class="text-lg font-semibold mt-4">Karan Mehra</h3>
-              <h4 class="text-sm font-medium mt-1 text-gray-500">
-                (Founder & CEO - Tyke Technologies)
-              </h4>
+              <div class="mt-4">
+                <h3 class="text-lg font-semibold">Karan Mehra</h3>
+                <h4 class="text-sm font-medium mt-1 text-gray-500">
+                  (Founder & CEO - Tyke Technologies)
+                </h4>
+              </div>
             </div>
 
             <!-- Testimonial 3 -->
             <div
-              class="swiper-slide bg-white rounded-lg p-8 max-w-sm mx-auto shadow-lg text-center"
+              class="bg-white rounded-lg p-6 lg:p-8 shadow-lg text-center h-full flex flex-col"
             >
-              <div class="text-blue-700 text-6xl">❝</div>
-              <p class="text-gray-600 mt-2">
+              <div class="text-blue-700 text-5xl">❝</div>
+              <p class="text-gray-600 mt-3 flex-grow">
                 Working with the Xportmine team over the past 11 months has been
                 an incredible journey. We collaborated on multiple projects,
                 driving for results.
               </p>
-              <h3 class="text-lg font-semibold mt-4">Poonam Dungerwal</h3>
-              <h4 class="text-sm font-medium mt-1 text-gray-500">
-                (Founder & CEO - Xportmine)
-              </h4>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div
-              class="swiper-slide bg-white rounded-lg p-8 max-w-sm mx-auto shadow-lg text-center"
-            >
-              <div class="text-blue-700 text-6xl">❝</div>
-              <p class="text-gray-600 mt-2">
-                Working with the Xportmine team over the past 11 months has been
-                an incredible journey. We collaborated on multiple projects,
-                driving for results.
-              </p>
-              <h3 class="text-lg font-semibold mt-4">Poonam Dungerwal</h3>
-              <h4 class="text-sm font-medium mt-1 text-gray-500">
-                (Founder & CEO - Xportmine)
-              </h4>
+              <div class="mt-4">
+                <h3 class="text-lg font-semibold">Poonam Dungerwal</h3>
+                <h4 class="text-sm font-medium mt-1 text-gray-500">
+                  (Founder & CEO - Xportmine)
+                </h4>
+              </div>
             </div>
           </div>
-
-          <!-- Pagination -->
-          <div class="swiper-pagination mt-6"></div>
         </div>
       </section>
 
@@ -499,29 +554,24 @@
       <special-footer></special-footer>
 
       <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
       <script>
-        var swiper = new Swiper(".swiper-container", {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          },
+        document.addEventListener("DOMContentLoaded", function () {
+          // Initialize Mobile Swiper
+          const mobileSwiper = new Swiper(".mobile-testimonials-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
         });
       </script>
 
