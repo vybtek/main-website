@@ -80,7 +80,7 @@ class SpecialHeader extends HTMLElement {
       <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full bg-white z-40 overflow-y-auto transition-all px-6 pt-20 pb-10">
         <button id="menu-close" class="absolute top-4 right-4 text-3xl text-gray-800"><i class="fas fa-times"></i></button>
         <nav class="space-y-4 text-blue-900 text-base font-medium">
-          <a href="about.html" class="nav-link block py-2 hover:text-blue-700">About</a>
+          <a href="about" class="nav-link block py-2 hover:text-blue-700">About</a>
           <details>
             <summary class="py-2 cursor-pointer">Services</summary>
             <div class="ml-4 space-y-2">
